@@ -1,0 +1,30 @@
+2022-03-22 17:47:29.232 +07:00 [ERR] Can't find process with ID 27832
+System.ArgumentException: Can't find process with ID 27832
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-22 17:47:29.342 +07:00 [ERR] Can't find process with ID 27972
+System.ArgumentException: Can't find process with ID 27972
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-22 17:57:20.534 +07:00 [ERR] Can't find process with ID 19264
+System.ArgumentException: Can't find process with ID 19264
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-22 18:30:50.547 +07:00 [ERR] Can't find process with ID 29384
+System.ArgumentException: Can't find process with ID 29384
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-22 18:30:50.570 +07:00 [ERR] Can't find process with ID 27808
+System.ArgumentException: Can't find process with ID 27808
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 

@@ -1,0 +1,6 @@
+version: 1
+WasSettingsWindowShown: 1
+GameLiftLocalPath: C:/Users/User-4/Desktop/Projects/AwsTest/SDK/GameLift/GameLift_06_03_2021/GameLiftLocal-1.0.5/GameLiftLocal.jar
+LocalServerPath: C:/Users/User-4/Desktop/Projects/AwsTest/Builds/AwsTest.exe
+GameLiftLocalPort: 8080
+...

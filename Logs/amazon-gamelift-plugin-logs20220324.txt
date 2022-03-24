@@ -1,0 +1,176 @@
+2022-03-24 13:54:35.628 +07:00 [ERR] Cannot process request because the process (7464) has exited.
+System.InvalidOperationException: Cannot process request because the process (7464) has exited.
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access, System.Boolean throwIfExited) [0x0004e] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.Kill () [0x00002] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Diagnostics.Process.Kill()
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00008] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:49 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 13:54:35.666 +07:00 [ERR] Cannot process request because the process (11936) has exited.
+System.InvalidOperationException: Cannot process request because the process (11936) has exited.
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access, System.Boolean throwIfExited) [0x0004e] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.Kill () [0x00002] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Diagnostics.Process.Kill()
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00008] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:49 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 14:56:01.667 +07:00 [ERR] Could not resolve host 'ec2.cn-north-1.amazonaws.com'
+System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'ec2.cn-north-1.amazonaws.com'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer, System.Net.NetworkInformation.PingOptions options) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer) [0x00009] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.NetworkInformation.Ping.SendPingAsync(string)
+  at AmazonGameLiftPlugin.Core.Latency.PingWrapper+<SendPingAsync>d__0.MoveNext () [0x00023] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\PingWrapper.cs:16 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at AmazonGameLiftPlugin.Core.Latency.LatencyService+<CalculateLatencyForRegion>d__6.MoveNext () [0x0006a] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\LatencyService.cs:83 
+2022-03-24 14:56:02.298 +07:00 [ERR] Could not resolve host 'ec2.cn-northwest-1.amazonaws.com'
+System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'ec2.cn-northwest-1.amazonaws.com'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer, System.Net.NetworkInformation.PingOptions options) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer) [0x00009] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.NetworkInformation.Ping.SendPingAsync(string)
+  at AmazonGameLiftPlugin.Core.Latency.PingWrapper+<SendPingAsync>d__0.MoveNext () [0x00023] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\PingWrapper.cs:16 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at AmazonGameLiftPlugin.Core.Latency.LatencyService+<CalculateLatencyForRegion>d__6.MoveNext () [0x0006a] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\LatencyService.cs:83 
+2022-03-24 14:56:52.505 +07:00 [ERR] Could not resolve host 'ec2.cn-north-1.amazonaws.com'
+System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'ec2.cn-north-1.amazonaws.com'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer, System.Net.NetworkInformation.PingOptions options) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer) [0x00009] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.NetworkInformation.Ping.SendPingAsync(string)
+  at AmazonGameLiftPlugin.Core.Latency.PingWrapper+<SendPingAsync>d__0.MoveNext () [0x00023] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\PingWrapper.cs:16 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at AmazonGameLiftPlugin.Core.Latency.LatencyService+<CalculateLatencyForRegion>d__6.MoveNext () [0x0006a] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\LatencyService.cs:83 
+2022-03-24 14:56:52.713 +07:00 [ERR] Could not resolve host 'ec2.cn-northwest-1.amazonaws.com'
+System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'ec2.cn-northwest-1.amazonaws.com'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer, System.Net.NetworkInformation.PingOptions options) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer) [0x00009] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.NetworkInformation.Ping.SendPingAsync(string)
+  at AmazonGameLiftPlugin.Core.Latency.PingWrapper+<SendPingAsync>d__0.MoveNext () [0x00023] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\PingWrapper.cs:16 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at AmazonGameLiftPlugin.Core.Latency.LatencyService+<CalculateLatencyForRegion>d__6.MoveNext () [0x0006a] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\LatencyService.cs:83 
+2022-03-24 14:57:07.635 +07:00 [ERR] Could not resolve host 'ec2.cn-north-1.amazonaws.com'
+System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'ec2.cn-north-1.amazonaws.com'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer, System.Net.NetworkInformation.PingOptions options) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer) [0x00009] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.NetworkInformation.Ping.SendPingAsync(string)
+  at AmazonGameLiftPlugin.Core.Latency.PingWrapper+<SendPingAsync>d__0.MoveNext () [0x00023] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\PingWrapper.cs:16 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at AmazonGameLiftPlugin.Core.Latency.LatencyService+<CalculateLatencyForRegion>d__6.MoveNext () [0x0006a] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\LatencyService.cs:83 
+2022-03-24 14:57:08.104 +07:00 [ERR] Could not resolve host 'ec2.cn-northwest-1.amazonaws.com'
+System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'ec2.cn-northwest-1.amazonaws.com'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer, System.Net.NetworkInformation.PingOptions options) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout, System.Byte[] buffer) [0x00009] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress, System.Int32 timeout) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Net.NetworkInformation.Ping.SendPingAsync (System.String hostNameOrAddress) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.NetworkInformation.Ping.SendPingAsync(string)
+  at AmazonGameLiftPlugin.Core.Latency.PingWrapper+<SendPingAsync>d__0.MoveNext () [0x00023] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\PingWrapper.cs:16 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at AmazonGameLiftPlugin.Core.Latency.LatencyService+<CalculateLatencyForRegion>d__6.MoveNext () [0x0006a] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Latency\LatencyService.cs:83 
+2022-03-24 17:42:03.240 +07:00 [ERR] Can't find process with ID 20748
+System.ArgumentException: Can't find process with ID 20748
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 17:42:03.277 +07:00 [ERR] Can't find process with ID 16204
+System.ArgumentException: Can't find process with ID 16204
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 17:42:44.246 +07:00 [ERR] Can't find process with ID 1256
+System.ArgumentException: Can't find process with ID 1256
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 17:42:44.282 +07:00 [ERR] Can't find process with ID 22128
+System.ArgumentException: Can't find process with ID 22128
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 17:48:06.151 +07:00 [ERR] Cannot process request because the process (7184) has exited.
+System.InvalidOperationException: Cannot process request because the process (7184) has exited.
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access, System.Boolean throwIfExited) [0x0004e] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.Kill () [0x00002] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Diagnostics.Process.Kill()
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00008] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:49 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 17:56:29.423 +07:00 [ERR] Can't find process with ID 12924
+System.ArgumentException: Can't find process with ID 12924
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 17:59:59.944 +07:00 [ERR] Cannot process request because the process (17592) has exited.
+System.InvalidOperationException: Cannot process request because the process (17592) has exited.
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access, System.Boolean throwIfExited) [0x0004e] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.Kill () [0x00002] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at (wrapper remoting-invoke-with-check) System.Diagnostics.Process.Kill()
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00008] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:49 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
+2022-03-24 18:49:40.969 +07:00 [ERR] Can't find process with ID 11232
+System.ArgumentException: Can't find process with ID 11232
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId, System.String machineName) [0x00040] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at System.Diagnostics.Process.GetProcessById (System.Int32 processId) [0x00000] in <0463b2ef957545c0a51b42f372cd4fbb>:0 
+  at AmazonGameLiftPlugin.Core.Shared.ProcessManagement.ProcessWrapper.Kill (System.Int32 processId) [0x00001] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\Shared\ProcessManagement\ProcessWrapper.cs:48 
+  at AmazonGameLiftPlugin.Core.GameLiftLocalTesting.GameLiftProcess.Stop (AmazonGameLiftPlugin.Core.GameLiftLocalTesting.Models.StopRequest request) [0x00021] in C:\Users\User-4\Desktop\Projects\AwsTest\Library\PackageCache\com.amazonaws.gamelift@7887aec4d715-1647853934034\Runtime\Core\GameLiftLocalTesting\GameLiftProcess.cs:156 
